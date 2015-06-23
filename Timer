@@ -4,29 +4,14 @@
  
  int main (void} {
     int timeNumber;
-    cout << "What time do you want?" <<endl;
+    cout << "What time do you want?" <<endl <<endl <<endl <<endl <<endl <<endl <<endl <<endl;
     cin >> timenumber; 
     do {
-        timeNumber = timeNumber - 1
- }
-class Timer {
-public:
-    Timer() { start = ::time(NULL); }
-    virtual ~Timer() { }
- 
-    unsigned long Lapse() {
-        //edit: this is wrong
-        //return (::time(NULL)-start)/1000;
-        return ::time(NULL)-start;
+        timeNumber = (timeNumber - 1); 
+        Wait (1.000);
+    } while (timeNumber > 0)
+    if (timeNUmber == 0) {
+           cout << "Time is up!!!!" <<endl <<endl;
     }
-private:
-    unsigned long start;
-};
- 
-int main(void) {
-    Timer t;
-    cout << "Start" <<endl;
-    while(t.Lapse() < 5) {}
-    cout << "5 seconds have passed" <<endl;
     return 0;
-}
+ }
