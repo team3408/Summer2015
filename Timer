@@ -1,0 +1,24 @@
+#include <iostream>
+#include <time.h>
+ 
+class Timer {
+public:
+    Timer() { start = ::time(NULL); }
+    virtual ~Timer() { }
+ 
+    unsigned long Lapse() {
+        //edit: this is wrong
+        //return (::time(NULL)-start)/1000;
+        return ::time(NULL)-start;
+    }
+private:
+    unsigned long start;
+};
+ 
+int main(void) {
+    Timer t;
+    std::cout << "Start" << std::endl;
+    while(t.Lapse() < 5) {}
+    std::cout << "5 seconds have passed" << std::endl;
+    return 0;
+}
