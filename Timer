@@ -1,6 +1,14 @@
 #include <iostream>
 #include <time.h>
+ using namespace std;
  
+ int main (void} {
+    int timeNumber;
+    cout << "What time do you want?" <<endl;
+    cin >> timenumber; 
+    do {
+        timeNumber = timeNumber - 1
+ }
 class Timer {
 public:
     Timer() { start = ::time(NULL); }
@@ -17,8 +25,8 @@ private:
  
 int main(void) {
     Timer t;
-    std::cout << "Start" << std::endl;
+    cout << "Start" <<endl;
     while(t.Lapse() < 5) {}
-    std::cout << "5 seconds have passed" << std::endl;
+    cout << "5 seconds have passed" <<endl;
     return 0;
 }
