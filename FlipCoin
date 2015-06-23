@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+# include <ctime>
+
+int coin()
+{
+	int flip;
+	flip=  rand() % 2 + 1;// assign random numbers
+				if (flip == 1)
+				cout << "The flip was heads." << endl;
+				else
+				cout << "The flip was tails." << endl;
+				//end if
+	return (flip);
+}
+
+int main ()
+{
+    int NUM_FLIPS = 100;
+	int count, face, heads = 0, tails = 0;
+	
+	// initialize the random number generator
+    srand(static_cast<int>(time(0))); 
+	
+    // generate and count the number of heads and tails
+	for (int count=1; count <= NUM_FLIPS; count++)
+     {
+        face = coin();
+		if (face == 1) 
+            heads++;
+         else
+            tails++;
+     }
+
+     cout << "The number flips: " << NUM_FLIPS << endl;
+     cout << "The number of heads: " << heads <<  endl;
+     cout << "The number of tails: " << tails <<  endl;
+}
