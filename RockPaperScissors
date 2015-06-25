@@ -9,10 +9,10 @@ int main()
 	char playerOne;
 	char playerTwo;
 	
-    cout << "Player 1: Enter R for rock, P for paper, or S for scissors: " << endl;
+    cout << "Player 1: Enter R for rock, P for paper, or S for scissors: " << endl <<endl <<endl <<endl <<endl <<endl <<endl<<endl <<endl <<endl <<endl << endl <<endl <<endl <<endl<<endl <<endl <<endl <<endl <<endl <<endl <<endl <<endl <<endl <<endl <<endl;
     cin >> playerOne;
     
-    cout << "Player 2: Enter R for rock, P for paper, or S for scissors: " << endl;
+    cout << "Player 2: Enter R for rock, P for paper, or S for scissors: " << endl  <<endl <<endl <<endl <<endl <<endl <<endl<<endl <<endl <<endl <<endl << endl <<endl <<endl <<endl<<endl <<endl <<endl <<endl <<endl <<endl <<endl <<endl <<endl <<endl <<endl;
     cin >> playerTwo;
     
     if (playerOne == 'r' || playerOne == 'R')
