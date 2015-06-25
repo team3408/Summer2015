@@ -1,0 +1,29 @@
+//  main.cpp
+//  Rock-Paper-Scissiors
+#include <iostream>
+#include <cstdlib>
+#include <limits>
+#include <ctime>
+#include <string.h>
+using namespace std;
+int main(int argc, const char * argv[]) {
+    int choice;
+    int computation;
+    char res;
+    cout << "Rock/Paper/scissors is ideal for solving problems such as who is going to pay for different rounds of drinks. The rules are: \n Rock beats scissors. \n Scissors beats Paper. \n Paper beats rock.\n";
+    cout << "Game Choices.\n\n";
+    cout << "1. Rock\n";
+    cout << "2. Paper\n";
+    cout << "3. Scissors\n";
+    cout << "4. Quit, exits the game.\n\n";
+    cout << "Please enter your choice.";
+    cin >> choice;
+    srandom((unsigned int) time(NULL));
+    computation = rand() % 3 + 1; //Computers pick.
+    cout << "Here was my bet!\n";if (computation==1) //Computer rock
+    {res = 1;cout << "Rock!\n";}else if (computation==2) //Computer paper
+    {res = 2;cout << "Paper!\n";}else if (computation==3)  // Computer scissors
+    {res = 3;cout << "Scissors!\n";}if ((choice==1 && computation==3 ) || (choice==2 && computation==1) || (choice==3 && computation==2))
+    {cout << "CONGRATS, MY FRIEND, DRINKS R ON U TONIGHT!";
+        }else { cout << "YOU HAVE LOST! NOW GET LOST!"; }
+    return 0;}
