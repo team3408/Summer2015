@@ -2,6 +2,8 @@
 
 This is the README for the Team3408 Robotics Summer team.  Let's have a great year.  Go Cubs!
 
+Tasks for Freshm
+
         -=Loyola Cub=-
                    ,   __, ,
    _.._         )\/(,-' (-' `.__
