@@ -8,7 +8,7 @@
     cin >> timenumber; 
     do {
         timeNumber = (timeNumber - 1); 
-        Wait (1.000);
+        Wait (1.000); //needs to be changed (Im to lazy to change it for you :) -sprocket
     } while (timeNumber > 0)
     if (timeNUmber == 0) {
            cout << "Time is up!!!!" <<endl <<endl;
