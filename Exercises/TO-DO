@@ -1,0 +1,21 @@
+#include <iostream> 
+#include <string>
+
+using namespace std;
+
+int main () {
+	int boxSize;
+	string list;
+	cout << "Hello user.  How big of a list do you want to make?" <<endl <<endl;
+	cin >> boxSize;
+	string* box = new string [boxSize]; // consider adding safety code either limiting box size or a (nothrow) and check for nullptr (look at dynamic memory page)
+	for ( int b = 0; b <= boxSize; b = b+1)
+	{
+		cout << "What is one thing you want to put in your list?" <<endl <<endl;
+		getline (cin, list); //surprisingly correct synatx
+		box [b] = list;
+		cout << box, boxSize;// looks like it is doing the same as the next line
+		printarray(box, boxSize); // incorrect syntax: needs to be replaced with some code, you might also want this outside the forloop
+	}
+	return 0;  //not neccesary in C++, only in C
+}
