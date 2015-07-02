@@ -1,0 +1,37 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main ()
+{
+    int table [13] = {};
+    
+    string title [13] = {};
+    title[0] = "12 times 0:     |   ";
+    title[1] = "12 times 1:     |   ";
+    title[2] = "12 times 2:     |   ";
+    title[3] = "12 times 3:     |   ";
+    title[4] = "12 times 4:     |   ";
+    title[5] = "12 times 5:     |   ";
+    title[6] = "12 times 6:     |   ";
+    title[7] = "12 times 7:     |   ";
+    title[8] = "12 times 8:     |   ";
+    title[9] = "12 times 9:     |   ";
+    title[10] = "12 times 10:    |   ";
+    title[11] = "12 times 11:    |   ";
+    title[12] = "12 times 12:    |   ";
+
+    for (int i=0 ; i<13 ; i++)
+    {
+        table[i] = 12 * i;
+    }
+    
+    for (int i=0 ; i<13 ; i++)
+    {
+        cout << title[i] << table[i] << endl;
+        cout << "__________________________" << endl;
+    }
+    
+    
+    return 0;
+}
