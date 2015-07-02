@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+#include <new>
+using namespace std;
+
+int main()
+{
+	int number;
+	int d;
+	string list;
+	string * p;
+	cout << "Type the number of things you want on your to do list" << endl; 
+	cin >> number;
+	p = new (nothrow) string[number];
+	if (p == nullptr)
+		cout << "Error:Data could no be allocated." << endl;
+	else
+	{
+		for (d = 0; d < number + 1; d++)
+		{
+			cout << "Enter an item on your to do list" << endl;
+			getline(cin, list);
+			p[d] = list;
+		}
+
+		
+			cout << "You have entered:" << endl;
+				for (d = 0; d < number + 1; d++)
+					cout << "-" << p[d] << endl;
+					delete[] p;
+				
+		}
+	string r; //add this if your running it on visual studio
+	cin >> r; //^
+	return 0;
+}
+	
