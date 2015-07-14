@@ -1,0 +1,17 @@
+1. robot to auto zone
+    - move all motors forward for specified rotations/encoder counts/time�1. robot to auto zone
+2. tote only
+    - pick up tote by raising elevator arms
+    - pivot 90 degrees
+    - move all motors forward for specified rotations/encoder counts/time
+3. bin only
+    - pick up bin by raising elevator arms
+    - pivot 90 degrees the other way
+    - move all motors forward for specified rotations/encoder counts/time
+4. tote and bin
+    - pick up bin by raising elevator arms
+    - move all motors forward for specified rotations/encoder counts/time
+    - move down elevator arms to the bottom where the limit switch is
+    - pick up tote by raising elevator arms
+    - pivot 90 degrees
+    - move all motors forward for specified rotations/encoder counts/time
