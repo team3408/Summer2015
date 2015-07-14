@@ -5,7 +5,7 @@
 
 /*
 1. robot to auto zone
-    - move all motors forward for specified rotations/encoder counts/time�1. robot to auto zone
+    - move all motors forward for specified rotations/encoder counts/time
 2. tote only
     - pick up tote by raising elevator arms
     - pivot 90 degrees
