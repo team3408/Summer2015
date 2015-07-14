@@ -1,3 +1,9 @@
+//Start the code off by getting the value from two limit switches and depending on the values of the 2 of them, cycle through 
+//the different options of which program to run
+
+
+
+/*
 1. robot to auto zone
     - move all motors forward for specified rotations/encoder counts/time�1. robot to auto zone
 2. tote only
@@ -15,3 +21,4 @@
     - pick up tote by raising elevator arms
     - pivot 90 degrees
     - move all motors forward for specified rotations/encoder counts/time
+*/
