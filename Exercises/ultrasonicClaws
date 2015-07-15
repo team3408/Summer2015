@@ -9,7 +9,7 @@
 	{
 		leftClawSpeed = leftClawSpeed * (rightUS/leftUS);
 	}
-	if (rightUS > leftUS)
+	else if (rightUS > leftUS)
 	{
 		rightClawSpeed = rightClawSpeed * (leftUS/rightUS);
 	}
