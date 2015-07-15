@@ -3,8 +3,8 @@
 //this is all contingent on both claws starting at the exact same starting place
 
 /*
-	int leftClawSpeed = joystick left axis value
-	int rightClawSpeed = joystick right axis value
+	int leftClawSpeed = joystick axis value
+	int rightClawSpeed = joystick axis value
 	if (leftUS > rightUS)
 	{
 		leftClawSpeed = leftClawSpeed * (rightUS/leftUS);
