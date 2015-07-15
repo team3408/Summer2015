@@ -1,0 +1,24 @@
+This uses the ultrasound sensor and the buttons on the joystick to control the claws. 
+  Button one puts the claws full down
+  Button two raises them 17 inches 
+  (17in - 43.18cm - is my imaginary height of one tote)
+  (1m is my imaginary height for the total range of the claws)
+
+//moves the motors down half speed until the claws are a meter away, aka full down
+if the button input = 1
+{
+  while the ultrasonic sensor < 770 (1 meter distance)
+  {
+    move the motors -.5 (half speed)
+    }
+}
+
+//moves motor until value of ultrasonic sensor is 17 inches higher than start
+if the button input = 2
+{
+  take the value of the ultrasonic sensor at that point and set it to "a"
+  while the ultrasonic sensor < a - 344
+  {
+    move the motor .5 (up half speed)
+    }
+  }
