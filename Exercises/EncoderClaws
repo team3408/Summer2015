@@ -1,0 +1,20 @@
+//when the joystick is moving, grab encoder counts of each claw and apply that to a proportion
+
+//this is all contingent on both claws starting at the exact same starting place
+
+/*
+	int leftClawSpeed = joystick left axis value
+	int rightClawSpeed = joystick right axis value
+	if (leftEncoder > rightEncoder)
+	{
+		leftClawSpeed = leftClawSpeed * (rightEncoder/leftEncoder);
+	}
+	if (rightEncoder > leftEncoder)
+	{
+		rightClawSpeed = rightClawSpeed * (leftEncoder/rightEncoder);
+	}
+	//we apply that prportion to cut the speed and adjust them until they are almost the same
+		//this allows the change of speeds to be small when they are only slightly off and large when they are way off
+	leftClaw = clawSpeed;
+	rightClaw = clawSpeed;
+*/
