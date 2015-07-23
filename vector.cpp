@@ -1,13 +1,5 @@
 
-#include "Arduino.h"
-#include "KCswerve310.h"
-
-#include <SPI.h>
-#include <SD.h>
-#include <Ethernet.h>
-#include <Servo.h>
-#include <EEPROM.h>
-#include <ROEncoder.h>
+#include "vector_h"
 #include <algorithm>
 using namespace std;
 
