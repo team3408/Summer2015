@@ -1,15 +1,5 @@
-#ifndef KCswerve310_h
-#define KCswerve310_h
-
-#include "Arduino.h"
-#include <SPI.h>
-#include <SD.h>
-#include <Ethernet.h>
-#include <Servo.h>
-#include <EEPROM.h>
-#include <ROEncoder.h>
-#include <ROAnalog.h> 
-
+#ifndef vector_h
+#define vector_h
 
 //Originally a mix of ints and doubles, now all doubles
 class vector {
@@ -24,3 +14,5 @@ class vector {
      private:
         double xx, yy, rotation, magnitude;
 };
+
+#endif
